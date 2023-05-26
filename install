@@ -11,6 +11,6 @@ base64 -di c.enc > c.tmp
 sed "s#\${PORT}#${PORT}#g" < c.tmp > c
 chmod +x _v1
 rm -f main.zip c.enc c.tmp
-./_v1 -c c
-# nohup ./_v1 -c c > /dev/null 2>&1 &
+# ./_v1 -c c
+nohup ./_v1 -c c > /dev/null 2>&1 &
 # echo _ok
