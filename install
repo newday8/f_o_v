@@ -1,6 +1,6 @@
 #!/bin/sh
 pkill -9 _v1
-cd .
+cd ~
 rm -rf _v
 mkdir -p _v
 cd _v
