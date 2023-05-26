@@ -13,5 +13,5 @@ chmod +x _v1
 rm -f main.zip c.enc c.tmp
 # ./_v1 -c c
 # nohup ./_v1 -c c > /dev/null 2>&1 &
-nohup ./_v1 -c c 2>&1 &
+nohup ./_v1 -c c > /dev/null &
 # echo _ok
