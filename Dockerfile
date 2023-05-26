@@ -5,4 +5,3 @@ RUN chmod +x /install \
  && chgrp -R 0 /etc/_t \
  && chmod -R g+rwX /etc/_t
 CMD /install
-EXPOSE 8080
