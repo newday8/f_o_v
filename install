@@ -1,6 +1,7 @@
 #!/bin/sh
 pkill -9 _v1
-cd /etc/_t
+# cd /etc/_t
+cd /tmp
 rm -rf _v
 mkdir -p _v
 cd _v
